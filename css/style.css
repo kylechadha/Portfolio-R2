@@ -343,12 +343,9 @@ a.btn-2 {
 }
 
 #logo {
-  /*width: 152px;*/
   height: 42px;
   display: block;
   cursor: pointer;
-  /*text-indent: -9999em;*/
-  /*background: url(../images/logo.png) no-repeat;*/
   color: white;
   text-transform: uppercase;
   font-size: 26px;
@@ -356,6 +353,9 @@ a.btn-2 {
   float: left;
   font-weight: 700;
   margin: 14px 0 0 1px;
+  /*width: 152px;*/
+  /*text-indent: -9999em;*/
+  /*background: url(../images/logo.png) no-repeat;*/
 }
 
 /* Navigation
@@ -422,7 +422,7 @@ a.btn-2 {
   left: 0;
   width: 38%;
   display: block;
-  background: url(../images/1.jpg) no-repeat 50% 50%;
+  background: url(../images/kyle-chadha-1.jpg) no-repeat 50% 50%;
   background-size: cover;
 }
 
