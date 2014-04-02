@@ -524,9 +524,9 @@ a.btn-2 {
 .skill .progress-line .current {
   height: 30px;
   width: 90%;
-  -webkit-transition: all 2s ease;
-  -moz-transition: all 2s ease;
-  transition: all 2s ease;
+  -webkit-transition: all 1.5s ease;
+  -moz-transition: all 1.5s ease;
+  transition: all 1.5s ease;
   background: #2ecc71;
   display: block;
 }
@@ -547,6 +547,7 @@ a.btn-2 {
 
 .resume {
   margin: 0 0 96px 0;
+  margin-bottom: 0px;
 }
 
 .resume p {
@@ -557,17 +558,17 @@ a.btn-2 {
   padding: 0 18px;
 }
 
-.resume:after {
+.resume:before {
   position: absolute;
-  bottom: -20px;
+  top: -20px;
   left: 50%;
   margin: 0 0 0 -30px;
   content: "";
   width: 0px;
   height: 0px;
   border-style: solid;
-  border-width: 20px 30px 0 30px;
-  border-color: #f2f2f1 transparent transparent transparent;
+  border-width: 0px 30px 20px 30px;
+  border-color: transparent transparent #f2f2f1 transparent;
 }
 
 .education {
@@ -813,6 +814,67 @@ a.btn-2 {
   display: inline-block;
 }
 
+.social li {
+  display: inline-block;
+  padding: 0 3px 0 4px;
+}
+
+.social a {
+  height: 34px;
+  width: 34px;
+  display: block;
+  border-radius: 50px;
+  background: #4b5456 url(../images/ico_social.png) no-repeat 0 7px;
+}
+
+.social .twitter a {
+  background-position: 0 7px;
+}
+
+.social .facebook a {
+  background-position: -34px 7px;
+}
+
+.social .pinterest a {
+  background-position: -68px 7px;
+}
+
+.social .google-plus a {
+  background-position: -102px 7px;
+}
+
+.social .ball a {
+  background-position: -136px 7px;
+}
+
+.social .linked-in a {
+  background-position: -170px 7px;
+}
+
+.social .twitter a:hover {
+  background-position: 0 -21px;
+}
+
+.social .facebook a:hover {
+  background-position: -34px -21px;
+}
+
+.social .pinterest a:hover {
+  background-position: -68px -21px;
+}
+
+.social .google-plus a:hover {
+  background-position: -102px -21px;
+}
+
+.social .ball a:hover {
+  background-position: -136px -21px;
+}
+
+.social .linked-in a:hover {
+  background-position: -170px -21px;
+}
+
 .contacts .msg{
   display: none;
   font-size: 18px;
@@ -889,9 +951,9 @@ a.btn-2 {
   background: #191f21;
   text-align: center;
   color: #4b5355;
-  font-size: 14px;
+  font-size: 24px;
   font-weight: 600;
-  padding: 40px 0 41px 0;
+  padding: 40px 0 0 0;
   text-transform: uppercase;
 }
 
@@ -899,7 +961,7 @@ a.btn-2 {
   padding: 0 0 22px 0;
 }
 
-#footer li {
+/*#footer li {
   display: inline-block;
   padding: 0 3px 0 4px;
 }
@@ -958,7 +1020,9 @@ a.btn-2 {
 
 #footer .linked-in a:hover {
   background-position: -170px -21px;
-}
+}*/
+
+
 /*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
 .fancybox-wrap,
 .fancybox-skin,
