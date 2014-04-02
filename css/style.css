@@ -682,7 +682,7 @@ a.btn-2 {
   text-align: center;
   padding-top: 95px;
   overflow: hidden;
-  margin-top: -95px;
+  /*margin-top: -95px;*/
 }
 
 .portfolio p {
