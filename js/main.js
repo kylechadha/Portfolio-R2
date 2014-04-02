@@ -96,10 +96,23 @@ $(document).ready(function() {
   $(".nav-bar a").click(function() {
     $(".portfolio .nav-bar li").removeClass("current")
     $(this).parent().addClass("current")
-    $(".portfolio article:not(.nav-bar)").hide();
-    $(".portfolio section").find($(this).attr("href")).show();
+    // $(".portfolio article:not(.nav-bar)").hide();
+    // $(".portfolio section").find($(this).attr("href")).show();
     return false;
   });
   
   $('.portfolio .fancy a').fancybox();
+
+  var $container = $('#projects');
+  $container.isotope({
+    // options
+    // itemSelector: '.item',
+    // layoutMode: 'fitRows'
+  });
+
+  $('#filters li a').click(function(){
+    var selector = $(this).attr('data-filter');
+    $container.isotope({ filter: selector });
+    return false;
+  });
 });

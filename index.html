@@ -52,7 +52,7 @@
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#learn-more">About Me</a></li>
+          <li><a href="#about">About Me</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#resume">Resume</a></li>
           <li><a href="#contact">Contact Me</a></li>
@@ -70,47 +70,49 @@
     <h2>Portfolio</h2>
     <p>I enjoy building things that solve real problems... especially my own. Here are a few of my recent creations.</p>
     <section>
-      <article class="nav-bar">
-        <h4>Filter By Category</h4>
-        <ul>
-          <li class="current"><a href="*">All</a></li>
-          <li><a href=".themes">Themes</a></li>
-          <li><a href=".icons">Icons</a></li>
-          <li><a href=".patterns">Patterns</a></li>
-          <li><a href=".mockups">Mockups</a></li>
-          <li><a href=".ui">UI Kits</a></li>
-        </ul>
-      </article>
-      <article class="fancy mockups">
-        <a data-fancybox-group="gallery" href="images/portfolio/portfolio-1.jpg"><img src="images/portfolio/portfolio-1th.jpg" alt=""></a>
-      </article>
-      <article class="fancy patterns">
-        <a data-fancybox-group="gallery" href="images/portfolio/portfolio-2.jpg"><img src="images/portfolio/portfolio-2th.jpg" alt=""></a>
-      </article>
-      <article class="fancy mockups">
-        <a data-fancybox-group="gallery" href="images/portfolio/portfolio-3.jpg"><img src="images/portfolio/portfolio-3th.jpg" alt=""></a>
-      </article>
-      <article class="fancy ui">
-        <a data-fancybox-group="gallery" href="images/portfolio/portfolio-4.jpg"><img src="images/portfolio/portfolio-4th.jpg" alt=""></a>
-      </article>
-      <article class="fancy icons">
-        <a data-fancybox-group="gallery" href="images/portfolio/portfolio-5.jpg"><img src="images/portfolio/portfolio-5th.jpg" alt=""></a>
-      </article>
-      <article class="fancy themes">
-        <a data-fancybox-group="gallery" href="images/portfolio/portfolio-6.jpg"><img src="images/portfolio/portfolio-6th.jpg" alt=""></a>
-      </article>
-      <article class="fancy icons">
-        <a data-fancybox-group="gallery" href="images/portfolio/portfolio-7.jpg"><img src="images/portfolio/portfolio-7th.jpg" alt=""></a>
-      </article>
-      <article class="fancy mockups">
-        <a data-fancybox-group="gallery" href="images/portfolio/portfolio-8.jpg"><img src="images/portfolio/portfolio-8th.jpg" alt=""></a>
-      </article>
+      <div id="projects">
+        <article class="nav-bar themes icons patterns mockups ui">
+          <h4>Filter By Technology</h4>
+          <ul id="filters">
+            <li class="current"><a href="#portfolio" data-filter="*">All</a></li>
+            <li><a href="#portfolio" data-filter=".themes">Ruby on Rails</a></li>
+            <li><a href="#portfolio" data-filter=".icons">Node.js</a></li>
+            <li><a href="#portfolio" data-filter=".patterns">AngularJS</a></li>
+            <li><a href="#portfolio" data-filter=".mockups">MongoDB</a></li>
+            <li><a href="#portfolio" data-filter=".ui">PostgreSQL</a></li>
+          </ul>
+        </article>
+        <article class="fancy mockups">
+          <a data-fancybox-group="gallery" href="images/portfolio/portfolio-1.jpg"><img src="images/portfolio/portfolio-1th.jpg" alt=""></a>
+        </article>
+        <article class="fancy patterns">
+          <a data-fancybox-group="gallery" href="images/portfolio/portfolio-2.jpg"><img src="images/portfolio/portfolio-2th.jpg" alt=""></a>
+        </article>
+        <article class="fancy mockups">
+          <a data-fancybox-group="gallery" href="images/portfolio/portfolio-3.jpg"><img src="images/portfolio/portfolio-3th.jpg" alt=""></a>
+        </article>
+        <article class="fancy ui">
+          <a data-fancybox-group="gallery" href="images/portfolio/portfolio-4.jpg"><img src="images/portfolio/portfolio-4th.jpg" alt=""></a>
+        </article>
+        <article class="fancy icons">
+          <a data-fancybox-group="gallery" href="images/portfolio/portfolio-5.jpg"><img src="images/portfolio/portfolio-5th.jpg" alt=""></a>
+        </article>
+        <article class="fancy themes">
+          <a data-fancybox-group="gallery" href="images/portfolio/portfolio-6.jpg"><img src="images/portfolio/portfolio-6th.jpg" alt=""></a>
+        </article>
+        <article class="fancy icons">
+          <a data-fancybox-group="gallery" href="images/portfolio/portfolio-7.jpg"><img src="images/portfolio/portfolio-7th.jpg" alt=""></a>
+        </article>
+        <article class="fancy mockups">
+          <a data-fancybox-group="gallery" href="images/portfolio/portfolio-8.jpg"><img src="images/portfolio/portfolio-8th.jpg" alt=""></a>
+        </article>
+      </div>
     </section>
   </div>
   <!-- / container -->
 </div>
 
-<div class="cols" id="learn-more">
+<!-- <div class="cols" id="learn-more">
   <div class="container">
     <section>
       <article>
@@ -126,9 +128,9 @@
         <p>Lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est.</p>
       </article>
     </section>
-  </div>
+  </div> -->
   <!-- / container -->
-</div>
+<!-- </div> -->
 
 <div class="about" id="about">
   <div class="photo">
