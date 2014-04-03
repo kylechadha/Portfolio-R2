@@ -228,7 +228,7 @@ h3 {
   line-height: 60px;
   color: #fff;
   padding: 0;
-  width: 53%;
+  width: 984px;
   text-align: left;
 }
 
@@ -242,26 +242,41 @@ h3 {
   opacity: 0;
   overflow: hidden;
   width: 100%;
-  color: #2ecc71;
-  animation: rotateWords 15s linear infinite 0s;
-  -webkit-animation: rotateWords 15s linear infinite 0s;
+  color: #60E69A;
+  -webkit-animation: rotateWords 13s linear infinite 0s;
+   -moz-animation: rotateWords 13s linear infinite 0s;
+    -ms-animation: rotateWords 13s linear infinite 0s;
+     -o-animation: rotateWords 13s linear infinite 0s;
+        animation: rotateWords 13s linear infinite 0s;
 }
 
 .top-slider .title h2 .rw-words span:nth-child(2) {
   -webkit-animation-delay: 2.4s;
-  animation-delay: 2.4s;
+   -moz-animation-delay: 2.4s;
+    -ms-animation-delay: 2.4s;
+     -o-animation-delay: 2.4s;
+        animation-delay: 2.4s;
 }
 .top-slider .title h2 .rw-words span:nth-child(3) {
   -webkit-animation-delay: 4.8s;
-  animation-delay: 4.8s;
+   -moz-animation-delay: 4.8s;
+    -ms-animation-delay: 4.8s;
+     -o-animation-delay: 4.8s;
+        animation-delay: 4.8s;
 }
 .top-slider .title h2 .rw-words span:nth-child(4) {
   -webkit-animation-delay: 7.2s;
-  animation-delay: 7.2s;
+   -moz-animation-delay: 7.2s;
+    -ms-animation-delay: 7.2s;
+     -o-animation-delay: 7.2s;
+        animation-delay: 7.2s;
 }
 .top-slider .title h2 .rw-words span:nth-child(5) {
-  -webkit-animation-delay: 11s;
-  animation-delay: 11s;
+  -webkit-animation-delay: 9.6s;
+   -moz-animation-delay: 9.6s;
+    -ms-animation-delay: 9.6s;
+     -o-animation-delay: 9.6s;
+        animation-delay: 9.6s;
 }
 
 @-webkit-keyframes rotateWords {
@@ -270,6 +285,36 @@ h3 {
   5% { opacity: 1; -webkit-transform: translateY(0px);}
   17% { opacity: 1; -webkit-transform: translateY(0px); }
   20% { opacity: 0; -webkit-transform: translateY(30px); }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@-moz-keyframes rotateWords {
+  0% { opacity: 0; }
+  2% { opacity: 0; -moz-transform: translateY(-30px); }
+  5% { opacity: 1; -moz-transform: translateY(0px);}
+  17% { opacity: 1; -moz-transform: translateY(0px); }
+  20% { opacity: 0; -moz-transform: translateY(30px); }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@-ms-keyframes rotateWords {
+  0% { opacity: 0; }
+  2% { opacity: 0; -ms-transform: translateY(-30px); }
+  5% { opacity: 1; -ms-transform: translateY(0px);}
+  17% { opacity: 1; -ms-transform: translateY(0px); }
+  20% { opacity: 0; -ms-transform: translateY(30px); }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@-o-keyframes rotateWords {
+  0% { opacity: 0; }
+  2% { opacity: 0; -o-transform: translateY(-30px); }
+  5% { opacity: 1; -o-transform: translateY(0px);}
+  17% { opacity: 1; -o-transform: translateY(0px); }
+  20% { opacity: 0; -o-transform: translateY(30px); }
   80% { opacity: 0; }
   100% { opacity: 0; }
 }
@@ -474,14 +519,14 @@ a.btn-2 {
   top: 0;
   bottom: 0;
   left: 0;
-  width: 38%;
+  width: 28%;
   display: block;
-  background: url(../images/kyle-chadha-1.jpg) no-repeat 50% 50%;
+  background: url(../images/kyle-chadha-2.jpg) no-repeat 50% 50%;
   background-size: cover;
 }
 
 .about .info {
-  padding: 96px 0 0 50%;
+  padding: 96px 0 0 40%;
   margin: 0 0 0 -63px;
 }
 
@@ -1351,6 +1396,7 @@ a.btn-2 {
     line-height: 50px;
     color: #fff;
     padding: 0;
+    width: 830px;
   }
   
   .top-slider .bx-pager {
