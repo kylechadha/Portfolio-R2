@@ -68,6 +68,7 @@ $(document).ready(function() {
       return false;
   });
 
+  // Skills Section: Superscrollorama Plugin
   var controller = $.superscrollorama({
     reverse: false
   });
@@ -76,6 +77,8 @@ $(document).ready(function() {
   controller.addTween('.about .info section article.marketing', TweenMax.from( $('.about .info section article.marketing'), .5, {css:{opacity: 0}}));
   controller.addTween('.about .info section article.seo', TweenMax.from( $('.about .info section article.seo'), .5, {css:{opacity: 0}}));
 
+
+  // Portfolio Section: General Setup
   function equalHeight(group) {
     var tallest = 0;
     group.each(function() {
@@ -103,6 +106,8 @@ $(document).ready(function() {
   
   $('.portfolio .fancy a').fancybox();
 
+
+  // Portfolio Section: Isotope Plugin
   var $container = $('#projects');
   $container.isotope({
     // options
@@ -115,4 +120,17 @@ $(document).ready(function() {
     $container.isotope({ filter: selector });
     return false;
   });
+
+
+  // Banner: Parallax 
+  if (jQuery(window).width() > 800) {
+    var counter = 0;
+    var startPosition;
+    $('#parallax').mousemove(function(e){
+        if (counter == 0) { startPosition = e.pageX };
+        $(this).css('background-position', (e.pageX - startPosition)/10 + 50 + "%" + " 50%");
+        console.log(startPosition);
+        counter += 1;
+    });
+  };
 });
