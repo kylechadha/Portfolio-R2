@@ -126,9 +126,19 @@ $(document).ready(function() {
   if (jQuery(window).width() > 800) {
     var counter = 0;
     var startPosition;
+    var xPosition;
     $('#parallax').mousemove(function(e){
+      
         if (counter == 0) { startPosition = e.pageX };
-        $(this).css('background-position', (e.pageX - startPosition)/10 + 50 + "%" + " 50%");
+
+        xPosition = (e.pageX - startPosition)/10 + 30;
+        if (xPosition < 0) {
+          xPosition = 0;
+        } else if (xPosition > 100) {
+          xPosition = 100;
+        }
+
+        $(this).css('background-position', xPosition + "%" + " 50%");
         console.log(startPosition);
         counter += 1;
     });
