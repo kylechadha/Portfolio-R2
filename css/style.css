@@ -893,6 +893,10 @@ a.btn-2 {
   filter: alpha(opacity=100);
 }
 
+.portfolio-title {
+  display: none;
+}
+
 .contacts {
   background: #252e30;
   padding: 96px 0 70px 0;

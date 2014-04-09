@@ -99,13 +99,28 @@ $(document).ready(function() {
   $(".nav-bar a").click(function() {
     $(".portfolio .nav-bar li").removeClass("current")
     $(this).parent().addClass("current")
-    // $(".portfolio article:not(.nav-bar)").hide();
-    // $(".portfolio section").find($(this).attr("href")).show();
     return false;
   });
-  
+
+  // Portfolio Section: FancyBox Plugin  
   $('.portfolio .fancy a').fancybox({
-    'openEffect' : 'elastic'
+    'openEffect' : 'elastic',
+    beforeLoad: function() {
+        var el, id = $(this.element).data('title-id');
+
+        if (id) {
+            el = $('#' + id);
+        
+            if (el.length) {
+                this.title = el.html();
+            }
+        }
+    },
+    helpers : {
+        title: {
+            type: 'inside'
+        }
+    }
     // 'titleShow'   : true,
     // 'titlePosition' : "over"
   });
