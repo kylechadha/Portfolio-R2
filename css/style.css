@@ -527,7 +527,7 @@ a.btn-2 {
 }
 
 .about .info {
-  padding: 96px 0 0 40%;
+  padding: 66px 0 0 40%;
   margin: 0 0 0 -63px;
 }
 
@@ -831,7 +831,7 @@ a.btn-2 {
 .portfolio section {
   overflow: hidden;
   clear: both;
-  margin: 63px -50px 60px 0;
+  margin: 20px -50px 60px 0;
 }
 
 .portfolio article {
@@ -895,7 +895,7 @@ a.btn-2 {
 
 .contacts {
   background: #252e30;
-  padding: 96px 0 100px 0;
+  padding: 96px 0 70px 0;
   overflow: hidden;
 }
 
@@ -1063,7 +1063,7 @@ a.btn-2 {
   color: #4b5355;
   font-size: 24px;
   font-weight: 600;
-  padding: 40px 0 0 0;
+  padding: 25px 0 0 0;
   text-transform: uppercase;
 }
 

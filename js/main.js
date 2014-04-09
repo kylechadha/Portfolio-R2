@@ -104,7 +104,11 @@ $(document).ready(function() {
     return false;
   });
   
-  $('.portfolio .fancy a').fancybox();
+  $('.portfolio .fancy a').fancybox({
+    'openEffect' : 'elastic'
+    // 'titleShow'   : true,
+    // 'titlePosition' : "over"
+  });
 
 
   // Portfolio Section: Isotope Plugin
@@ -128,7 +132,7 @@ $(document).ready(function() {
     var startPosition;
     var xPosition;
     $('#parallax').mousemove(function(e){
-      
+
         if (counter == 0) { startPosition = e.pageX };
 
         xPosition = (e.pageX - startPosition)/10 + 30;
