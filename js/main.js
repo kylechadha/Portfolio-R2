@@ -1,3 +1,12 @@
+
+// Load Screen
+var img = new Image();
+img.onload = function() {
+    $('.load-screen').hide();
+};
+img.src = 'images/kyle-in-rwanda-1920x1200.jpg';
+
+
 $(document).ready(function() {
     "use strict";
 
