@@ -4,27 +4,43 @@ $(document).ready(function() {
   // Intro Cover: Parallax 
   if (jQuery(window).width() > 800) {
 
-    var counter = 0;
+    var firstMouseMove = true;
     var startPosition;
     var xPosition;
+    var leftEdge, rightEdge;
 
     $('#home').mousemove(function(e){
 
-        if (counter == 0) { startPosition = e.pageX };
+        // Fixes startPosition so all movement is relative to initial mouse position
+        if (firstMouseMove == true) { 
+          startPosition = e.pageX;
+          firstMouseMove = false;
+        };
 
-        
+        // Sets xPosition based on startPosition
         xPosition = (e.pageX - startPosition)/10 + 30;
-        console.log(e.pageX);
-        console.log(xPosition);
+
+        // Resets startPosition if a change in direction occurs once an edge has been hit
+        if (leftEdge < e.pageX) {
+          startPosition = e.pageX + 300;
+          leftEdge = 10000;
+        } else if (rightEdge > e.pageX) {
+          startPosition = e.pageX - 700;
+          rightEdge = -10000;
+        };
+
+        // Prevents background position from varying beyond 0 to 100
         if (xPosition < 0) {
           xPosition = 0;
+          leftEdge = e.pageX;
         } else if (xPosition > 100) {
           xPosition = 100;
-        }
+          rightEdge = e.pageX;
+        };
 
+        // Creates parallax effect based on xPosition
         $('#parallax').css('background-position', xPosition + "%" + " 50%");
-        // console.log(startPosition);
-        counter += 1;
+
     });
   };
 
