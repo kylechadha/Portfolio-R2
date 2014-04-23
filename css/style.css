@@ -199,6 +199,7 @@ h3 {
   background-color: #252e30;
   display: inline-block;
   text-align: center;
+  vertical-align: middle;
 }
 
 .load-screen img {

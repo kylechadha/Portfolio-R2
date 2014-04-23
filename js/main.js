@@ -2,7 +2,7 @@
 // Load Screen
 var img = new Image();
 img.onload = function() {
-    $('.load-screen').hide();
+    $('.load-screen').fadeOut();
 };
 img.src = 'images/kyle-in-rwanda-1920x1200.jpg';
 
