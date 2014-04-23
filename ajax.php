@@ -16,7 +16,7 @@
 		$j_email = $_POST['user_email'];
 		
 		/* Add your email address here */
-		$contact_email = 'email@yourwebsite.com';
+		$contact_email = 'kyle.chadha@gmail.com';
 		$reply_email = $j_email;
 		$reply_name = $j_name;
 		$contact_subject = __('Contact Form','am');

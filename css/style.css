@@ -938,55 +938,13 @@ a.btn-2 {
   width: 34px;
   display: block;
   border-radius: 50px;
-  background: #4b5456 url(../images/ico_social.png) no-repeat 0 7px;
 }
 
-.social .twitter a {
-  background-position: 0 7px;
+.social i {
+  color: #2ECC71;
 }
-
-.social .facebook a {
-  background-position: -34px 7px;
-}
-
-.social .pinterest a {
-  background-position: -68px 7px;
-}
-
-.social .google-plus a {
-  background-position: -102px 7px;
-}
-
-.social .ball a {
-  background-position: -136px 7px;
-}
-
-.social .linked-in a {
-  background-position: -170px 7px;
-}
-
-.social .twitter a:hover {
-  background-position: 0 -21px;
-}
-
-.social .facebook a:hover {
-  background-position: -34px -21px;
-}
-
-.social .pinterest a:hover {
-  background-position: -68px -21px;
-}
-
-.social .google-plus a:hover {
-  background-position: -102px -21px;
-}
-
-.social .ball a:hover {
-  background-position: -136px -21px;
-}
-
-.social .linked-in a:hover {
-  background-position: -170px -21px;
+.social i:hover {
+  color: white;
 }
 
 .contacts .msg{
